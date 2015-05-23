@@ -1,6 +1,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/UITimeField.svg)](https://cocoapods.org/?q=UITimeField)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/CodeFalling/UITimeField/master/LICENSE)
 [![platform](https://img.shields.io/badge/platform-iOS-blue.svg)]()
+[![Build Status](https://travis-ci.org/CodeFalling/UITimeField.svg?branch=master)](https://travis-ci.org/CodeFalling/UITimeField)
 
 # UITimeField
 A iOS time input inspire by Android's timer app
