@@ -48,7 +48,7 @@ enum LABEL_TYPE{
     _second = 0;
     _minute = 0;
     for(NSInteger i=0;i<SIZE_GUARD;i++){
-        _labels[i] = [UILabel alloc];
+        _labels[i] = [[UILabel alloc] init];
     }
     _stackPos = 0;
     [self refresh];
@@ -109,10 +109,10 @@ enum LABEL_TYPE{
         }
 
         if(i==LABEL_HOUR||i==LABEL_SECOND||i==LABEL_MINUTE){
-            [_labels[i] initWithFrame:CGRectMake(x,0,timeWidth,timeHeight)];
+            _labels[i].frame = CGRectMake(x,0,timeWidth,timeHeight);
             _labels[i].font = [UIFont systemFontOfSize:[self fontSizeFitHeight:timeWidth]];
         }else{
-            [_labels[i] initWithFrame:CGRectMake(x, unitY, unitWidth, unitHeight)];
+            _labels[i].frame = CGRectMake(x, unitY, unitWidth, unitHeight);
             _labels[i].font = [UIFont systemFontOfSize:[self fontSizeFitHeight:unitWidth]];
         }
 
