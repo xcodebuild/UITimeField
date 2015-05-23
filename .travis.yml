@@ -3,3 +3,4 @@ xcode_project: UITimeFieldSample.xcodeproj
 xcode_scheme: UITimeFieldSample
 notifications:
   email: false
+script: xctool -project UITimeFieldSample.xcodeproj CODE_SIGNING_REQUIRED=NO -scheme UITimeFieldSample build
