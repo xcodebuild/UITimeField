@@ -1,4 +1,5 @@
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/v/UITimeField.svg)](https://cocoapods.org/?q=UITimeField)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/CodeFalling/UITimeField/master/LICENSE)
 [![platform](https://img.shields.io/badge/platform-iOS-blue.svg)]()
 
 # UITimeField
@@ -20,11 +21,18 @@ Copy or use git module to import
 │   └── UITimeField.m
 ```
 
-## Pod
+## CocoaPods
 
-Comming soon
+```
+platform :ios
+pod 'UITimeField','1.0.0'
+```
 
 # How to use
+
+```objective-c
+#import "UITimeField.h"
+```
 
 ```objective-c
 UITimeField *_timeField = [[UITimeField alloc] initWithFrame:CGRectMake(20, 20, 260, 160)];
