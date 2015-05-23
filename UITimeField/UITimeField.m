@@ -99,7 +99,7 @@ enum LABEL_TYPE{
 
     for(NSInteger i=0;i<SIZE_GUARD;i++){
 
-        CGFloat x=0,y=0;
+        CGFloat x=0;
         for(NSInteger k=0;k<i;k++){
             if(k== LABEL_HOUR||k==LABEL_MINUTE||k==LABEL_SECOND){
                 x += timeWidth;

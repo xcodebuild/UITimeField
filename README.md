@@ -36,6 +36,8 @@ _timeField.secondUnit=@"s";
 
 Or add Custom View with `UITimeField` in your storyboard.
 
-You can use `_timeField.hour`,`_timeField.minute`,`_timeField.second` to set or get time.
+- You can use `_timeField.hour`,`_timeField.minute`,`_timeField.second` to set or get time.
+
+- You can use `refresh` to let it refresh UI data
 
 **Notice** that `hour` bigger than 24 and `minute`/`second` bigger than 60 is **allowed**(Just like android timer's behaviour)

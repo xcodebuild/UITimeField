@@ -22,5 +22,5 @@
 
 @property (nonatomic, readwrite) UIView *inputAccessoryView;
 
-- (void)refresh;
+- (void) refresh;
 @end
