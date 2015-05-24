@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UITimeField"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "A iOS time input inspired by Android's timer app"
 
   s.description  = <<-DESC
