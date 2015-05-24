@@ -15,12 +15,13 @@
 @property (assign) NSString *minuteUnit;
 @property (assign) NSString *secondUnit;
 
-@property (assign) NSInteger hour;
-@property (assign) NSInteger minute;
-@property (assign) NSInteger second;
+@property (readonly) NSInteger hour;
+@property (readonly) NSInteger minute;
+@property (readonly) NSInteger second;
 
 
 @property (nonatomic, readwrite) UIView *inputAccessoryView;
 
 - (void) refresh;
+- (void)setInput:(NSString*) timeStr;
 @end

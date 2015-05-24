@@ -26,7 +26,7 @@ Copy or use git module to import
 
 ```
 platform :ios
-pod 'UITimeField','1.0.0'
+pod 'UITimeField','1.1.0'
 ```
 
 # How to use
@@ -45,8 +45,10 @@ _timeField.secondUnit=@"s";
 
 Or add Custom View with `UITimeField` in your storyboard.
 
-- You can use `_timeField.hour`,`_timeField.minute`,`_timeField.second` to set or get time.
+- You can use `_timeField.hour`,`_timeField.minute`,`_timeField.second` to get time.
 
 - You can use `refresh` to let it refresh UI data
+
+- You can use `setInput:(NSString *)timeStr` to set input string.(**notice that timeStr.length must <= 6)
 
 **Notice** that `hour` bigger than 24 and `minute`/`second` bigger than 60 is **allowed**(Just like android timer's behaviour)

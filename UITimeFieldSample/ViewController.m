@@ -21,11 +21,12 @@ UITimeField *_timeField;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _timeField = [[UITimeField alloc] initWithFrame:CGRectMake(20, 20, 260, 160)];
+    _timeField = [[UITimeField alloc] initWithFrame:CGRectMake(20, 20, 240, 230)];
     _timeField.hourUnit=@"h";
     _timeField.minuteUnit=@"m";
     _timeField.secondUnit=@"s";
 
+    [_timeField setInput:@"233232"];
     [self.view addSubview:_timeField];
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];

@@ -69,7 +69,7 @@ enum LABEL_TYPE{
     float fontSize = 4;
     UILabel *label = [[UILabel alloc] initWithFrame:self.frame];
     label.text = @"S";
-    while ([label.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]}].height < height -4)
+    while ([label.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]}].height < height-2)
     {
         fontSize+=1;
     }
@@ -125,6 +125,16 @@ enum LABEL_TYPE{
 - (NSString*) getTimeAsStr:(NSInteger) time{
     NSString *zero = @"0";
     return (time>10)?@(time).stringValue:([zero stringByAppendingString:@(time).stringValue]);
+}
+
+- (void)setInput:(NSString *)timeStr {
+
+    assert(timeStr.length<= INPUT_STACK_SIZE);
+    _stackPos = timeStr.length;
+    for(NSInteger i = 0;i< timeStr.length ;i++){
+        _inputStack[i] = [[NSString stringWithFormat:@"%c", [timeStr characterAtIndex:i]] intValue];
+    }
+    [self refresh];
 }
 
 - (void)refresh {
