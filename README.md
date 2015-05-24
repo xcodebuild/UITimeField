@@ -26,7 +26,7 @@ Copy or use git module to import
 
 ```
 platform :ios
-pod 'UITimeField','1.1.0'
+pod 'UITimeField','1.1.1'
 ```
 
 # How to use
