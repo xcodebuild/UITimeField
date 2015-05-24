@@ -26,7 +26,7 @@ UITimeField *_timeField;
     _timeField.minuteUnit=@"m";
     _timeField.secondUnit=@"s";
 
-    [_timeField setInput:@"233232"];
+    [_timeField setInput:@"101010"];
     [self.view addSubview:_timeField];
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];

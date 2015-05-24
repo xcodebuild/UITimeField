@@ -110,6 +110,7 @@ enum LABEL_TYPE{
 
         if(i==LABEL_HOUR||i==LABEL_SECOND||i==LABEL_MINUTE){
             _labels[i].frame = CGRectMake(x,0,timeWidth,timeHeight);
+
             _labels[i].font = [UIFont systemFontOfSize:[self fontSizeFitHeight:timeWidth]];
         }else{
             _labels[i].frame = CGRectMake(x, unitY, unitWidth, unitHeight);
@@ -124,7 +125,7 @@ enum LABEL_TYPE{
 
 - (NSString*) getTimeAsStr:(NSInteger) time{
     NSString *zero = @"0";
-    return (time>10)?@(time).stringValue:([zero stringByAppendingString:@(time).stringValue]);
+    return (time>=10)?@(time).stringValue:([zero stringByAppendingString:@(time).stringValue]);
 }
 
 - (void)setInput:(NSString *)timeStr {
